@@ -30,12 +30,25 @@
         background-color: transparent;
         color: var(--main-color);
     }
-    .desc-text-color{
+    .desc-text{
         color: #808080;
+        font-size: 1.37rem;
     }
     .main-color{
         color: #E95A08;
     }
+    .sec-margin{
+        margin: 120px 150px 0 150px;
+    }
 }
 
 
+/* responsive for mobile devices */
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        margin: 67px 16px 0 16px;
+    }
+    .nav-manu ul{
+        display: none;
+    }
+}
