@@ -120,7 +120,7 @@
     }
 
     .banner-image {
-        max-width: 100%;
+        max-width: 99%;
         margin: 0 auto;
     }
 
@@ -130,7 +130,7 @@
 
     /* plant shop */
     .plants section {
-        max-width: 99%;
+        max-width: 393px;
         margin: 0 auto;
     }
 
