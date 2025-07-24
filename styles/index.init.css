@@ -79,11 +79,13 @@
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
+
     /* header */
     .header {
         justify-items: center;
     }
-/* navigation */
+
+    /* navigation */
     .nav-bar {
         width: 100%;
         margin: 0 auto;
@@ -101,18 +103,22 @@
     .nav-menu ul {
         display: none;
     }
-/* banner */
+
+    /* banner */
     .banner {
         flex-direction: column-reverse;
         width: 100%;
         margin: 28px 16px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 24px;
     }
-    .banner-desc{
+
+    .banner-desc {
         font-size: 14px;
     }
+
     .banner-image {
         max-width: 100%;
         margin: 0 auto;
@@ -121,28 +127,32 @@
     .banner-content {
         margin: 28px 16px 0 16px;
     }
+
     /* plant shop */
-    .plants section{
-        max-width: 100%;
+    .plants section {
+        max-width: 99%;
         margin: 0 auto;
     }
-    .plants-content .section-title{
+
+    .plants-content .section-title {
         font-size: 24px;
     }
-    .plants-content p {
-        max-width: 400px;
+
+    .plants-content .section-desc-our-plants {
+        width: 95%;
+        margin: 0 auto;
         font-size: 14px;
     }
 
     .plants-cards {
         grid-template-columns: repeat(2, 1fr);
-        margin: 14px;
+        margin: 10px;
     }
 
     /* plant lovers */
     .plant-lovers {
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .plant-badge {
@@ -152,18 +162,18 @@
     .plant-lover-container {
         flex-direction: column;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .plant-lover-image {
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
         padding: 10px;
     }
 
     .plant-lovers-content {
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 95%;
+        margin: 0;
     }
 
     .plant-lovers-content h2 {
