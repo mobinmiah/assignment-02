@@ -40,15 +40,39 @@
     .sec-margin{
         margin: 120px 150px 0 150px;
     }
+    
 }
 
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
-    .nav-bar{
-        margin: 67px 16px 0 16px;
+    .header{
+        justify-items: center;
     }
-    .nav-manu ul{
+    
+    .nav-bar{
+        width: 100%;
+        margin: 0;
+        padding: 13px 16px 0 16px;
+    }
+    .logo-image{
+        width: 65px;
+    }
+    .nav-cart{
+        width: 100px;
+    }
+    .nav-menu ul{
         display: none;
+    }
+    .banner{
+        flex-direction:column-reverse;
+        width: 100%;
+        margin: 28px 16px;
+    }
+    .banner-image{
+        margin-top: 28px;
+    }
+    .banner-content{
+        margin: 28px 16px 0 16px;
     }
 }
