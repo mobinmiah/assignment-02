@@ -84,54 +84,57 @@
     margin: 0 auto;
 }
 
-
-    #bloom {
-        width: 367px;
-        height: 201px;
-        background-image: url(../assets/deal-bloom.png);
-    }
-
-    #ana {
-        width: 367px;
-        height: 201px;
-        background-image: url(../assets/deal-ana.png);
-    }
-
-    #zabo {
-        width: 753px;
-        height: 423px;
-        background-image: url(../assets/deal-zabo.png);
-    }
-
-    .deals {
-        border-radius: 20px;
-        text-align: center;
-    }
-
-    .deals-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-    }
-    .column{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-
-/* .deals-images .column .bloom{
+#bloom {
+    width: 367px;
+    height: 201px;
     background-image: url(../assets/deal-bloom.png);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.deals-images .column .ana{
+
+#ana {
+    width: 367px;
+    height: 201px;
     background-image: url(../assets/deal-ana.png);
 }
-.deals-images .zabo {
+
+#zabo {
+    width: 753px;
+    height: 423px;
     background-image: url(../assets/deal-zabo.png);
-} */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deals {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.deals-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    text-align: center;
+    justify-items: center;
+}
+
+.column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
+    body {
+        max-width: 567px;
+    }
 
     /* header */
     .header {
@@ -140,13 +143,16 @@
 
     /* navigation */
     .nav-bar {
-        width: 100%;
-        margin: 0 auto;
+        max-width: 400px;
+        margin: 0 10px;
         padding: 13px 16px 0 16px;
+        align-items: center;
+        gap: 230px;
     }
 
-    .logo-image {
+    .logo .logo-image {
         width: 65px;
+        margin: 0 auto;
     }
 
     .nav-cart {
@@ -160,7 +166,7 @@
     /* banner */
     .banner {
         flex-direction: column-reverse;
-        width: 100%;
+        max-width: 400px;
         margin: 28px 16px;
     }
 
@@ -172,18 +178,19 @@
         font-size: 14px;
     }
 
-    .banner-image {
-        max-width: 99%;
+    .banner-image img {
+        max-width: 393px;
         margin: 0 auto;
     }
 
     .banner-content {
+        max-width: 360px;
         margin: 28px 16px 0 16px;
     }
 
     /* plant shop */
     .plants section {
-        max-width: 393px;
+        max-width: 400px;
         margin: 0 auto;
     }
 
@@ -192,20 +199,21 @@
     }
 
     .plants-content .section-desc-our-plants {
-        width: 95%;
+        max-width: 330px;
         margin: 0 auto;
         font-size: 14px;
     }
 
     .plants-cards {
         grid-template-columns: repeat(2, 1fr);
-        margin: 10px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     /* plant lovers */
     .plant-lovers {
-        max-width: 100%;
-        margin: 0;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .plant-badge {
@@ -235,5 +243,58 @@
 
     .plant-lovers-content li {
         font-size: 14px;
+    }
+
+    /* latest deals */
+    .latest-deals {
+        max-width: 360px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+
+    .deals-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 16px 28px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .deals-content {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .deals-content h2 {
+        font-size: 24px;
+    }
+
+    .deals-content p {
+        max-width: 330px;
+        margin: 10 auto;
+        font-size: 14px;
+    }
+    .deals-cards{
+        flex-direction: column;
+        max-width: 400px;
+        margin: 30px auto;
+    }
+    .deals{
+        max-width: 360px;
+        margin: auto;
+    }
+
+    .deals p{
+        font-size: 20px;
+    }
+
+    .deals a{
+        font-size: 16px;
+    }
+
+    #zabo{
+        height: 201px;
     }
 }
