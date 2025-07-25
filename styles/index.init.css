@@ -50,6 +50,44 @@
     }
 }
 
+/* nav styles */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 150px 0 150px;
+}
+
+.nav-menu,
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.nav-menu .nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+/* hero area styles */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 150px;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+
+/* plant lovers section styles */
 .plant-lovers {
     max-width: 1140px;
     margin: 200px auto 100px;
@@ -160,7 +198,7 @@
 
 .form input::placeholder {
     font-size: 16px;
-    padding: 5px;
+    padding: 20px;
     font-family: "Inter", sans-serif;
 }
 
@@ -176,7 +214,44 @@
     cursor: pointer;
 }
 
+/* footer styles */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-columns .logo {
+    width: 140px;
+    margin-bottom: 30px;
+}
+
+.footer-nav a {
+    display: block;
+    margin: 15px;
+    font-family: "Inter", sans-serif;
+    color: gray;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    margin: 15px;
+}
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
@@ -255,13 +330,13 @@
     .plants-cards {
         grid-template-columns: repeat(2, 1fr);
         max-width: 360px;
-        margin: 0 auto;
+        margin: 30px auto;
     }
 
     /* plant lovers */
     .plant-lovers {
         max-width: 360px;
-        margin: 0 auto;
+        margin: 30 auto;
     }
 
     .plant-badge {
@@ -296,7 +371,7 @@
     /* latest deals */
     .latest-deals {
         max-width: 360px;
-        margin: 0 auto 0 15px;
+        margin: 30px auto;
         justify-items: center;
     }
 
@@ -347,15 +422,18 @@
     #zabo {
         height: 201px;
     }
-/* news later */
+
+    /* news later */
     .news-later {
         max-width: 400px;
         margin: 20px auto;
         padding: 70px 30px;
     }
-    .news-later h2{
+
+    .news-later h2 {
         font-size: 20px;
     }
+
     .news-container {
         max-width: 350px;
         margin: 0 auto;
@@ -365,19 +443,31 @@
         max-width: 320px;
         margin-top: 20px;
     }
+
     .form input {
         max-width: 200px;
         margin: 0 auto;
     }
-    .form input::placeholder{
+
+    .form input::placeholder {
         font-size: 16px;
         padding: 5px;
         font-family: "Inter", sans-serif;
     }
-    .join-btn{
+
+    .join-btn {
         max-width: 100px;
         margin: 0 auto;
         font-size: 16px;
         font-family: "Inter", sans-serif;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-columns {
+        margin-top: 30px;
     }
 }
